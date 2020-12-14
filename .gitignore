@@ -129,3 +129,4 @@ dmypy.json
 
 .idea/
 og_data/*.txt
+checkpoints/*.h5
