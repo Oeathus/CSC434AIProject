@@ -5,11 +5,8 @@ from tensorflow import keras
 import pandas as pd
 import numpy as np
 import os
-
 from urllib.request import urlopen
 import re
-import os
-import pandas as pd
 from io import StringIO
 
 dateFixer = re.compile(r'(\d{4}-\d{2}-\d{2})\s\d{2}:\d{2}')

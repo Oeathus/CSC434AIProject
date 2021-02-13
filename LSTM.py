@@ -67,7 +67,7 @@ for dataset in datasets:
             callbacks=[es_callback, modelckpt_callback],
         )
 
-        acc = history.history["accuracy"][-1]
+        acc = history.history["val_accuracy"][-1]
         print(dataset + "," + str(sequence_length) + "," + str(acc))
         with open(lstm_log_csv_file, 'a') as log_file:
             log_file.write(dataset + "," + str(sequence_length) + "," + str(acc) + "\n")
